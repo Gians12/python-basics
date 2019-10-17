@@ -9,13 +9,13 @@ floor2=392
 floor3=366
 floor4=223
 #initialize game
-pg.init()
+pg.init
 #create Clock
 clock = pg.time.Clock()
 #init display
 gameDisplay = pg.display.set_mode((width,height))
 pg.display.set_caption('Swordsman of DOOM')
-pg.mouse.set_visible(False)
+pg.mouse.set_visible(true)
 #bg icon
 bg=pg.image.load("bg.jpg")
 gameDisplay.blit(bg, (0, 0))
