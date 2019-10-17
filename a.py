@@ -24,7 +24,7 @@ def prime(x):
                    break
            else:
                print(num)
-
-fibonacci(x=random.randrange(80))
+y=raw_input("enter an upper limit")
+fibonacci(x=random.randrange(y))
 print"\n \n \n \n \n"
-prime(x=random.randrange(80))
+prime(x=random.randrange(y))
