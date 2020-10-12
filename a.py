@@ -2,7 +2,7 @@ import random
 
 
 def fibonacci(x):
-    print"the first %s fibonacci sequential numbers are:"%(str(x))
+    print("the first %s fibonacci sequential numbers are:"%(str(x)))
     first=1
     second=0
     sum=0
@@ -12,7 +12,7 @@ def fibonacci(x):
         second=first
         first=sum
         number+=1
-        print str(first)
+        print (str(first))
 
 def prime(x):
     print"Prime numbers between 2 and",x,"are:"
@@ -24,7 +24,9 @@ def prime(x):
                    break
            else:
                print(num)
-y=raw_input("enter an upper limit")
-fibonacci(x=random.randrange(y))
-print"\n \n \n \n \n"
-prime(x=random.randrange(y))
+                
+if __name__== "__main__" :
+    y=raw_input("enter an upper limit")
+    fibonacci(x=random.randrange(y))
+    print("\n \n \n \n \n")
+    prime(x=random.randrange(y))
