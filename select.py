@@ -19,13 +19,13 @@ def connectDB(args,query):
         print "Error1"
         exit()
 
+if __name__=="__main__": 
+    d=connectDB(args,query)
 
-d=connectDB(args,query)
-
-try:
-    with open('a.txt', 'a') as fp:
-        fp.write(' '.join('%s' % i for i in d)+'\n')
-    print "Done"
-except:
-    print "Error2"
-    exit()
+    try:
+        with open('a.txt', 'a') as fp:
+            fp.write(' '.join('%s' % i for i in d)+'\n')
+        print "Done"
+    except:
+        print "Error2"
+        exit()
