@@ -16,7 +16,7 @@ def connectDB(args,query):
         rows=cur.fetchall()
         return rows
     except:
-        print "Error1"
+        print ("Error1")
         exit()
 
 
@@ -25,7 +25,7 @@ d=connectDB(args,query)
 try:
     with open('a.txt', 'a') as fp:
         fp.write(' '.join('%s' % i for i in d)+'\n')
-    print "Done"
+    print ("Done")
 except:
-    print "Error2"
+    print ("Error2")
     exit()
